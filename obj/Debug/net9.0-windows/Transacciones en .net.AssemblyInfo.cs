@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Transacciones en .net")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a16764493a9211a1a374040294069bb421680c84")]
 [assembly: System.Reflection.AssemblyProductAttribute("Transacciones en .net")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Transacciones en .net")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -41,7 +41,7 @@
             dataGridView1.Location = new Point(30, 31);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(634, 450);
+            dataGridView1.Size = new Size(600, 233);
             dataGridView1.TabIndex = 0;
             // 
             // btnaggclientes
