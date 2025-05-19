@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q9KTuU0XElY=",
+  "dgSpecHash": "N5jTv8PWxSI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\PruebaGit2\\Transacciones en .net.csproj",
+  "projectFilePath": "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\Transacciones en .net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\PruebaGit2\\Transacciones en .net.csproj": {}
+    "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\Transacciones en .net.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\PruebaGit2\\Transacciones en .net.csproj": {
+    "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\Transacciones en .net.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\PruebaGit2\\Transacciones en .net.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\Transacciones en .net.csproj",
         "projectName": "Transacciones en .net",
-        "projectPath": "C:\\Users\\user\\PruebaGit2\\Transacciones en .net.csproj",
+        "projectPath": "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\Transacciones en .net.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\PruebaGit2\\obj\\",
+        "outputPath": "C:\\Users\\user\\Source\\Repos\\PruebaGit2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
