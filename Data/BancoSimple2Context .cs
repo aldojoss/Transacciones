@@ -8,7 +8,7 @@ using Transacciones_en_.net.Models;
 
 namespace Transacciones_en_.net.Data
 {
-    public class BancoSimple2M5Context : DbContext
+    public class BancoSimple2Context : DbContext
     {
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Cuentas> Cuentas { get; set; }
@@ -16,7 +16,7 @@ namespace Transacciones_en_.net.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-B8PH5VV\SQLEXPRESS;Database=BancoSimple2m5;trusted_Connection=true;trustserverCertificate=true");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-B8PH5VV\SQLEXPRESS;Database=BancoSimple2;trusted_Connection=true;trustserverCertificate=true");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

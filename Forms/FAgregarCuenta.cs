@@ -35,7 +35,7 @@ namespace Transacciones_en_.net.Forms
                 NumeroCuenta = textBox1.Text,
                 Saldo = Convert.ToDecimal(txtsaldo.Text),
                 ClienteId = clienteId,
-                Estado = true
+                Activa = true
             };
             DialogResult = DialogResult.OK;
             Close();

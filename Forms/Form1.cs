@@ -1,15 +1,18 @@
+using Microsoft.EntityFrameworkCore;
 using Transacciones_en_.net.Data;
 using Transacciones_en_.net.Forms;
+using Transacciones_en_.net.Models;
 
 namespace Transacciones_en_.net
 {
     public partial class Form1 : Form
     {
-        private BancoSimple2M5Context db = new BancoSimple2M5Context();
+        private BancoSimple2Context db = new BancoSimple2Context();
         public Form1()
         {
             InitializeComponent();
-            dataGridView1.DataSource = db.Clientes.ToList();
+            dgvclientes.DataSource = db.Clientes.ToList();
+            dgvcuentas.DataSource = db.Cuentas.ToList();
         }
 
         private void btnaggclientes_Click(object sender, EventArgs e)
@@ -17,7 +20,8 @@ namespace Transacciones_en_.net
             Form faggc = new FormAddCl();
             if (faggc.ShowDialog() == DialogResult.OK)
             {
-                dataGridView1.DataSource = db.Clientes.ToList();
+                dgvclientes.DataSource = db.Clientes.ToList();
+
             }
 
 
@@ -25,24 +29,77 @@ namespace Transacciones_en_.net
 
         private void button1_Click(object sender, EventArgs e)
         {
-          
-                var clienteId = (int)dataGridView1.SelectedRows[0].Cells["ClienteId"].Value;
 
-                var form = new FAgregarCuenta(clienteId);
+            var clienteId = (int)dgvclientes.SelectedRows[0].Cells["ClienteId"].Value;
 
-                if (form.ShowDialog() == DialogResult.OK)
+            var form = new FAgregarCuenta(clienteId);
+
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                db.Cuentas.Add(form.NuevaCuenta);
+
+                db.SaveChanges();
+
+                dgvcuentas.DataSource = db.Cuentas.ToList();
+
+            }
+
+        }
+
+        private void btntransacciones_Click(object sender, EventArgs e)
+        {
+
+            var cuentaorigen = (int)dgvcuentas.SelectedRows[0].Cells["CuentaId"].Value;
+            var cuentadestino = (int)dgvcuentas.SelectedRows[1].Cells["CuentaId"].Value;
+
+            var form = new FTranferencias(cuentaorigen, cuentadestino);
+            if (form.ShowDialog()==DialogResult.OK)
+            {
+                RealizarTranferencia(cuentaorigen, cuentadestino, form.Monto);
+            }
+        }
+
+
+        private void RealizarTranferencia(int origenId, int destinoId, decimal monto)
+        {
+            using var transaccion = db.Database.BeginTransaction(System.Data.IsolationLevel.Serializable);
+            {
+                try
                 {
-                    db.Cuentas.Add(form.NuevaCuenta);
+                    var cuentaOrigen = db.Cuentas.FirstOrDefault(c => c.CuentaId == origenId);
+                    var cuentaDestino = db.Cuentas.FirstOrDefault(c => c.CuentaId == destinoId);
+
+                    if (cuentaOrigen.Saldo < monto)
+                    {
+                        throw new Exception("Saldo insuficiente");
+                    }
+
+                    cuentaOrigen.Saldo -= monto;
+                    cuentaDestino.Saldo += monto;
+
+                    //Registrar la transaccion
+                    db.Transacciones.Add(new Transacciones
+                    {
+                        Monto = monto,
+                        Fecha = DateTime.Now,
+                        Descripcion = "Transferencia",
+                        CuentaOrigenId = origenId,
+                        CuentaDestinoId = destinoId
+                    });
 
                     db.SaveChanges();
 
-                    dgvcuentas.DataSource = db.Cuentas.ToList();
-
+                    //Transaccion completada
+                    transaccion.Commit();
+                    MessageBox.Show("Transferencia realizada con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            
-           
-
-
+                catch (Exception ex)
+                {
+                    //Reversion de transaccion
+                    transaccion.Rollback();
+                    MessageBox.Show($"Error al realizar la transferencia: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Transacciones_en_.net.Models
         public int CuentaId { get; set; }
         public string NumeroCuenta { get; set; }
         public decimal Saldo { get; set; }
-        public bool Estado { get; set; } = true;
+        public bool Activa { get; set; } = true;
         public int ClienteId { get; set; }
 
         [ForeignKey("ClienteId")]
