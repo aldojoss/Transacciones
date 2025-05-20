@@ -5,6 +5,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|C:\\Users\\user\\source\\repos\\PruebaGit2\\forms\\formaddcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\formaddcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\forms\\formaddcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\formaddcl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:models\\cuentas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\data\\bancosimple2m5context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:data\\bancosimple2m5context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|c:\\users\\user\\source\\repos\\pruebagit2\\forms\\fagregarcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\fagregarcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|C:\\Users\\user\\source\\repos\\PruebaGit2\\forms\\fagregarcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6A1DFE9B-C475-4517-A6F3-C1DC2548C5D9}|Transacciones en .net.csproj|solutionrelative:forms\\fagregarcuenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +42,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\Form1.cs",
+              "RelativeDocumentMoniker": "Forms\\Form1.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\Form1.cs",
+              "RelativeToolTip": "Forms\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:35:32.83Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -35,6 +77,77 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T00:18:33.173Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cuentas.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Models\\Cuentas.cs",
+              "RelativeDocumentMoniker": "Models\\Cuentas.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Models\\Cuentas.cs",
+              "RelativeToolTip": "Models\\Cuentas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T13:47:05.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormAddCl.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FormAddCl.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAddCl.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FormAddCl.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FormAddCl.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:02:12.112Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormAddCl.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FormAddCl.cs",
+              "RelativeDocumentMoniker": "Forms\\FormAddCl.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FormAddCl.cs",
+              "RelativeToolTip": "Forms\\FormAddCl.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:02:18.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BancoSimple2M5Context.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Data\\BancoSimple2M5Context.cs",
+              "RelativeDocumentMoniker": "Data\\BancoSimple2M5Context.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Data\\BancoSimple2M5Context.cs",
+              "RelativeToolTip": "Data\\BancoSimple2M5Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T04:02:49.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FAgregarCuenta.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FAgregarCuenta.cs",
+              "RelativeDocumentMoniker": "Forms\\FAgregarCuenta.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FAgregarCuenta.cs",
+              "RelativeToolTip": "Forms\\FAgregarCuenta.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:33:54.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FAgregarCuenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FAgregarCuenta.cs",
+              "RelativeDocumentMoniker": "Forms\\FAgregarCuenta.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\PruebaGit2\\Forms\\FAgregarCuenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\FAgregarCuenta.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T14:33:07.585Z"
             }
           ]
         }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 namespace Transacciones_en_.net.Models
 {
     public class Cuentas
@@ -14,6 +15,8 @@ namespace Transacciones_en_.net.Models
         public decimal Saldo { get; set; }
         public bool Estado { get; set; } = true;
         public int ClienteId { get; set; }
-        public Clientes Cliente { get; set; } //relacion?
+
+        [ForeignKey("ClienteId")]
+        public Clientes Cliente { get; set; } 
     }
 }

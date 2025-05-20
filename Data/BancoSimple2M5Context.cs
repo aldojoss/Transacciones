@@ -18,6 +18,7 @@ namespace Transacciones_en_.net.Data
         {
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-B8PH5VV\SQLEXPRESS;Database=BancoSimple2M5;trusted_Connection=true;trustserverCertificate=true");
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cuentas>().HasQueryFilter(e => e.Estado == true);
