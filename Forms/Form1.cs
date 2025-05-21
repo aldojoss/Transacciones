@@ -53,9 +53,10 @@ namespace Transacciones_en_.net
             var cuentadestino = (int)dgvcuentas.SelectedRows[1].Cells["CuentaId"].Value;
 
             var form = new FTranferencias(cuentaorigen, cuentadestino);
-            if (form.ShowDialog()==DialogResult.OK)
+            if (form.ShowDialog() == DialogResult.OK)
             {
                 RealizarTranferencia(cuentaorigen, cuentadestino, form.Monto);
+                dgvcuentas.DataSource = db.Cuentas.ToList();
             }
         }
 
@@ -100,6 +101,13 @@ namespace Transacciones_en_.net
                     MessageBox.Show($"Error al realizar la transferencia: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+
+        private void btnregistrotransacciones_Click(object sender, EventArgs e)
+        {
+            MostrarTransacciones form = new MostrarTransacciones();
+           form.ShowDialog();
+            
         }
     }
 }

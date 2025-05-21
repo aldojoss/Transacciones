@@ -99,6 +99,7 @@
             Controls.Add(txtnombre);
             Controls.Add(label1);
             Name = "FormAddCl";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FormAddCl";
             ResumeLayout(false);
             PerformLayout();

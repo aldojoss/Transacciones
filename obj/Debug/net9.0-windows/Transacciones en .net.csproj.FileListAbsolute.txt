@@ -114,3 +114,4 @@ C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\ref\Transacciones
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FAgregarCuenta.resources
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FTranferencias.resources
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Properties.Resources.resources
+C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.MostrarTransacciones.resources

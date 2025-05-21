@@ -35,9 +35,9 @@ namespace Transacciones_en_.net.Forms
             var cuentaDestino = db.Cuentas.Include(c => c.Cliente).
                First(c => c.CuentaId == cuentaDestinoId);
 
-            label1.Text = $"Mi Cuenta {cuentaOrigen.Cliente.Nombre}--{cuentaOrigen.NumeroCuenta}";
-            label3.Text = $"Cuenta Destino {cuentaDestino.Cliente.Nombre}--{cuentaDestino.NumeroCuenta}";
-            label2.Text = $"Saldo disponible: {cuentaOrigen.Saldo}";
+            label1.Text = $"Cuenta Destino {cuentaOrigen.Cliente.Nombre}--{cuentaOrigen.NumeroCuenta}";
+            label3.Text = $"Mi Cuenta {cuentaDestino.Cliente.Nombre}--{cuentaDestino.NumeroCuenta}";
+            label2.Text = $"Saldo disponible: {cuentaDestino.Saldo}";
 
         }
 

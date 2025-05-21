@@ -88,6 +88,7 @@
             Controls.Add(textBox1);
             Controls.Add(label1);
             Name = "FAgregarCuenta";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FAgregarCuenta";
             ResumeLayout(false);
             PerformLayout();

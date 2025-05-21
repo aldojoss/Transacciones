@@ -39,16 +39,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(101, 20);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(40, 9);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(51, 20);
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(22, 74);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(40, 43);
             label2.Name = "label2";
             label2.Size = new Size(53, 20);
             label2.TabIndex = 1;
@@ -56,7 +59,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(91, 71);
+            textBox1.Location = new Point(120, 74);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 2;
@@ -64,7 +67,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(25, 119);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(43, 121);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 3;
@@ -72,7 +76,11 @@
             // 
             // btntransferir
             // 
-            btntransferir.Location = new Point(25, 169);
+            btntransferir.FlatAppearance.BorderSize = 0;
+            btntransferir.FlatStyle = FlatStyle.Flat;
+            btntransferir.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btntransferir.ForeColor = Color.White;
+            btntransferir.Location = new Point(40, 169);
             btntransferir.Name = "btntransferir";
             btntransferir.Size = new Size(94, 29);
             btntransferir.TabIndex = 4;
@@ -82,19 +90,24 @@
             // 
             // btncancelar
             // 
-            btncancelar.Location = new Point(147, 169);
+            btncancelar.BackColor = Color.Crimson;
+            btncancelar.FlatAppearance.BorderSize = 0;
+            btncancelar.FlatStyle = FlatStyle.Flat;
+            btncancelar.ForeColor = Color.White;
+            btncancelar.Location = new Point(231, 169);
             btncancelar.Name = "btncancelar";
-            btncancelar.Size = new Size(69, 29);
+            btncancelar.Size = new Size(81, 29);
             btncancelar.TabIndex = 5;
-            btncancelar.Text = "Cancelar";
-            btncancelar.UseVisualStyleBackColor = true;
+            btncancelar.Text = "Salir";
+            btncancelar.UseVisualStyleBackColor = false;
             btncancelar.Click += btncancelar_Click;
             // 
             // FTranferencias
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(253, 273);
+            BackColor = Color.DarkGreen;
+            ClientSize = new Size(364, 273);
             Controls.Add(btncancelar);
             Controls.Add(btntransferir);
             Controls.Add(label3);
@@ -102,6 +115,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "FTranferencias";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FTranferencias";
             ResumeLayout(false);
             PerformLayout();

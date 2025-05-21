@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             btnaggclientes = new Button();
             button1 = new Button();
             panel1 = new Panel();
@@ -37,14 +39,16 @@
             pnsup = new Panel();
             label3 = new Label();
             panel2 = new Panel();
+            btnregistrotransacciones = new Button();
             panel3 = new Panel();
+            dgvcuentas = new DataGridView();
             label2 = new Label();
             label1 = new Label();
-            dgvcuentas = new DataGridView();
             dgvclientes = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnsup.SuspendLayout();
+            panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvcuentas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvclientes).BeginInit();
@@ -138,24 +142,62 @@
             // panel2
             // 
             panel2.BorderStyle = BorderStyle.Fixed3D;
+            panel2.Controls.Add(btnregistrotransacciones);
             panel2.Dock = DockStyle.Bottom;
             panel2.Location = new Point(175, 561);
             panel2.Name = "panel2";
             panel2.Size = new Size(712, 46);
             panel2.TabIndex = 8;
             // 
+            // btnregistrotransacciones
+            // 
+            btnregistrotransacciones.FlatAppearance.BorderSize = 0;
+            btnregistrotransacciones.FlatStyle = FlatStyle.Flat;
+            btnregistrotransacciones.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnregistrotransacciones.ForeColor = Color.White;
+            btnregistrotransacciones.Image = Properties.Resources.icons8_ojo_50;
+            btnregistrotransacciones.ImageAlign = ContentAlignment.MiddleLeft;
+            btnregistrotransacciones.Location = new Point(3, 3);
+            btnregistrotransacciones.Name = "btnregistrotransacciones";
+            btnregistrotransacciones.Size = new Size(349, 36);
+            btnregistrotransacciones.TabIndex = 5;
+            btnregistrotransacciones.Text = "Registro de Transacciones";
+            btnregistrotransacciones.UseVisualStyleBackColor = true;
+            btnregistrotransacciones.Click += btnregistrotransacciones_Click;
+            // 
             // panel3
             // 
             panel3.AutoScroll = true;
+            panel3.Controls.Add(dgvcuentas);
             panel3.Controls.Add(label2);
             panel3.Controls.Add(label1);
-            panel3.Controls.Add(dgvcuentas);
             panel3.Controls.Add(dgvclientes);
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(175, 41);
             panel3.Name = "panel3";
             panel3.Size = new Size(712, 520);
             panel3.TabIndex = 9;
+            // 
+            // dgvcuentas
+            // 
+            dgvcuentas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvcuentas.BackgroundColor = Color.White;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(55, 44, 144);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(55, 44, 144);
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dgvcuentas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dgvcuentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvcuentas.EnableHeadersVisualStyles = false;
+            dgvcuentas.GridColor = Color.FromArgb(252, 196, 25);
+            dgvcuentas.Location = new Point(213, 293);
+            dgvcuentas.Name = "dgvcuentas";
+            dgvcuentas.RowHeadersWidth = 51;
+            dgvcuentas.Size = new Size(450, 176);
+            dgvcuentas.TabIndex = 11;
             // 
             // label2
             // 
@@ -179,22 +221,21 @@
             label1.TabIndex = 9;
             label1.Text = "Clientes";
             // 
-            // dgvcuentas
-            // 
-            dgvcuentas.BackgroundColor = Color.White;
-            dgvcuentas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvcuentas.GridColor = SystemColors.WindowText;
-            dgvcuentas.Location = new Point(213, 287);
-            dgvcuentas.Name = "dgvcuentas";
-            dgvcuentas.RowHeadersWidth = 51;
-            dgvcuentas.Size = new Size(450, 176);
-            dgvcuentas.TabIndex = 8;
-            // 
             // dgvclientes
             // 
+            dgvclientes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvclientes.BackgroundColor = Color.White;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(55, 44, 144);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(55, 44, 144);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dgvclientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dgvclientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvclientes.GridColor = SystemColors.WindowText;
+            dgvclientes.EnableHeadersVisualStyles = false;
+            dgvclientes.GridColor = Color.FromArgb(252, 196, 25);
             dgvclientes.Location = new Point(27, 49);
             dgvclientes.Name = "dgvclientes";
             dgvclientes.RowHeadersWidth = 51;
@@ -212,12 +253,14 @@
             Controls.Add(pnsup);
             Controls.Add(panel1);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnsup.ResumeLayout(false);
             pnsup.PerformLayout();
+            panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dgvcuentas).EndInit();
@@ -238,7 +281,8 @@
         private Panel panel3;
         private Label label2;
         private Label label1;
-        private DataGridView dgvcuentas;
         private DataGridView dgvclientes;
+        private Button btnregistrotransacciones;
+        private DataGridView dgvcuentas;
     }
 }

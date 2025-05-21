@@ -123,6 +123,16 @@ namespace Transacciones_en_.net.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ojo_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ojo-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_parte_trasera_de_tarjeta_bancaria_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-parte-trasera-de-tarjeta-bancaria-50", resourceCulture);
