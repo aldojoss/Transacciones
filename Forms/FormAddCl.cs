@@ -22,9 +22,10 @@ namespace Transacciones_en_.net
             // Validar campos
             if (string.IsNullOrWhiteSpace(txtnombre.Text) || string.IsNullOrWhiteSpace(txtidentificacion.Text))
             {
-                MessageBox.Show("Por favor, complete todos los campos.");
+                MessageBox.Show("Por favor, complete todos los campos.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
 
 
             // Crear nuevo cliente
@@ -52,5 +53,10 @@ namespace Transacciones_en_.net
             AgregarCliente();
         }
 
+        private void btncancelar_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            Close();
+        }
     }
 }

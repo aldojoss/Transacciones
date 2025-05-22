@@ -29,6 +29,11 @@ namespace Transacciones_en_.net
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (dgvclientes.SelectedRows.Count ==0)
+            {
+                MessageBox.Show("Debe Seleccionar un Cliente", "Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return;
+            }
 
             var clienteId = (int)dgvclientes.SelectedRows[0].Cells["ClienteId"].Value;
 
@@ -48,7 +53,12 @@ namespace Transacciones_en_.net
 
         private void btntransacciones_Click(object sender, EventArgs e)
         {
+            if (dgvcuentas.SelectedRows.Count!=2)
+            {
+                MessageBox.Show("Por favor, seleccione dos cuentas.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
 
+            }
             var cuentaorigen = (int)dgvcuentas.SelectedRows[0].Cells["CuentaId"].Value;
             var cuentadestino = (int)dgvcuentas.SelectedRows[1].Cells["CuentaId"].Value;
 

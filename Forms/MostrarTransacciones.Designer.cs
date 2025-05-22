@@ -78,6 +78,7 @@
             ClientSize = new Size(573, 559);
             Controls.Add(btnsalir);
             Controls.Add(dgvtransacciones);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MostrarTransacciones";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MostrarTransacciones";

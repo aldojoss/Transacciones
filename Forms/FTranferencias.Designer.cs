@@ -114,6 +114,7 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "FTranferencias";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FTranferencias";
