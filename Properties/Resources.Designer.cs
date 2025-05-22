@@ -93,6 +93,26 @@ namespace Transacciones_en_.net.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_buscar_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-buscar-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_buscar_50__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-buscar-50 (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_cuenta_comercial_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-cuenta-comercial-32", resourceCulture);
@@ -146,6 +166,16 @@ namespace Transacciones_en_.net.Properties {
         internal static System.Drawing.Bitmap icons8_usuario_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap texbox {
+            get {
+                object obj = ResourceManager.GetObject("texbox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -37,7 +37,7 @@ namespace Transacciones_en_.net
 
 
             // Guardar cliente en la base de datos
-            using (var db = new Transacciones_en_.net.Data.BancoSimple2M5Context())
+            using (var db = new Transacciones_en_.net.Data.BancoSimple2Context())
             {
                 db.Clientes.Add(nuevoCliente);
                 db.SaveChanges();
@@ -45,7 +45,7 @@ namespace Transacciones_en_.net
             MessageBox.Show("Cliente agregado exitosamente.");
             DialogResult = DialogResult.OK;
             Close();
-            this.Close();
+            
         }
 
         private void btnagregarr_Click(object sender, EventArgs e)

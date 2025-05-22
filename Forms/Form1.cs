@@ -27,33 +27,11 @@ namespace Transacciones_en_.net
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (dgvclientes.SelectedRows.Count ==0)
-            {
-                MessageBox.Show("Debe Seleccionar un Cliente", "Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Warning);
-                return;
-            }
 
-            var clienteId = (int)dgvclientes.SelectedRows[0].Cells["ClienteId"].Value;
-
-            var form = new FAgregarCuenta(clienteId);
-
-            if (form.ShowDialog() == DialogResult.OK)
-            {
-                db.Cuentas.Add(form.NuevaCuenta);
-
-                db.SaveChanges();
-
-                dgvcuentas.DataSource = db.Cuentas.ToList();
-
-            }
-
-        }
 
         private void btntransacciones_Click(object sender, EventArgs e)
         {
-            if (dgvcuentas.SelectedRows.Count!=2)
+            if (dgvcuentas.SelectedRows.Count != 2)
             {
                 MessageBox.Show("Por favor, seleccione dos cuentas.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -88,7 +66,7 @@ namespace Transacciones_en_.net
                     cuentaOrigen.Saldo -= monto;
                     cuentaDestino.Saldo += monto;
 
-                    //Registrar la transaccion
+                    //registrar la transaccion
                     db.Transacciones.Add(new Transacciones
                     {
                         Monto = monto,
@@ -100,13 +78,13 @@ namespace Transacciones_en_.net
 
                     db.SaveChanges();
 
-                    //Transaccion completada
+                    //transaccion completada
                     transaccion.Commit();
                     MessageBox.Show("Transferencia realizada con exito", "Exito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    //Reversion de transaccion
+                    //reversion de transaccion
                     transaccion.Rollback();
                     MessageBox.Show($"Error al realizar la transferencia: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -116,8 +94,42 @@ namespace Transacciones_en_.net
         private void btnregistrotransacciones_Click(object sender, EventArgs e)
         {
             MostrarTransacciones form = new MostrarTransacciones();
-           form.ShowDialog();
-            
+            form.ShowDialog();
+
+        }
+        private void Buscar()
+        {
+            var like = txtbuscar.Text;
+            var clientes = db.Clientes.Where(c => EF.Functions.Like(c.Nombre, $"%{like}%")).ToList();
+            dgvclientes.DataSource = clientes;
+        }
+
+        private void btnbuscar_Click(object sender, EventArgs e)
+        {
+            Buscar();
+        }
+
+        private void btnagregarcuentas_Click(object sender, EventArgs e)
+        {
+            if (dgvclientes.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Debe Seleccionar un Cliente", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var clienteId = (int)dgvclientes.SelectedRows[0].Cells["ClienteId"].Value;
+
+            var form = new FAgregarCuenta(clienteId);
+
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                db.Cuentas.Add(form.NuevaCuenta);
+
+                db.SaveChanges();
+
+                dgvcuentas.DataSource = db.Cuentas.ToList();
+                MessageBox.Show($"Cuenta Agregada Exisotsamente", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
         }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtnumeroCuenta = new TextBox();
             btnagregar = new Button();
             label2 = new Label();
             txtsaldo = new TextBox();
@@ -46,21 +46,28 @@
             label1.TabIndex = 6;
             label1.Text = "Numero de Cuenta";
             // 
-            // textBox1
+            // txtnumeroCuenta
             // 
-            textBox1.Location = new Point(219, 25);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 7;
+            txtnumeroCuenta.BackColor = SystemColors.InactiveCaption;
+            txtnumeroCuenta.BorderStyle = BorderStyle.None;
+            txtnumeroCuenta.Location = new Point(219, 32);
+            txtnumeroCuenta.Name = "txtnumeroCuenta";
+            txtnumeroCuenta.Size = new Size(125, 20);
+            txtnumeroCuenta.TabIndex = 7;
             // 
             // btnagregar
             // 
+            btnagregar.BackColor = Color.FromArgb(55, 44, 144);
+            btnagregar.FlatAppearance.BorderSize = 0;
+            btnagregar.FlatStyle = FlatStyle.Flat;
+            btnagregar.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnagregar.ForeColor = Color.White;
             btnagregar.Location = new Point(219, 130);
             btnagregar.Name = "btnagregar";
             btnagregar.Size = new Size(125, 29);
             btnagregar.TabIndex = 8;
             btnagregar.Text = "Aceptar";
-            btnagregar.UseVisualStyleBackColor = true;
+            btnagregar.UseVisualStyleBackColor = false;
             btnagregar.Click += btnagregar_Click;
             // 
             // label2
@@ -75,10 +82,13 @@
             // 
             // txtsaldo
             // 
-            txtsaldo.Location = new Point(219, 75);
+            txtsaldo.BackColor = SystemColors.InactiveCaption;
+            txtsaldo.BorderStyle = BorderStyle.None;
+            txtsaldo.Location = new Point(219, 82);
             txtsaldo.Name = "txtsaldo";
-            txtsaldo.Size = new Size(125, 27);
+            txtsaldo.Size = new Size(125, 20);
             txtsaldo.TabIndex = 10;
+            txtsaldo.TextChanged += txtsaldo_TextChanged;
             // 
             // btnsalir
             // 
@@ -104,7 +114,7 @@
             Controls.Add(txtsaldo);
             Controls.Add(label2);
             Controls.Add(btnagregar);
-            Controls.Add(textBox1);
+            Controls.Add(txtnumeroCuenta);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FAgregarCuenta";
@@ -117,7 +127,7 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtnumeroCuenta;
         private Button btnagregar;
         private Label label2;
         private TextBox txtsaldo;

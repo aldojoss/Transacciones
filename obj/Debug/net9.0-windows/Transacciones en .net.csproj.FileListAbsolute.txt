@@ -97,8 +97,12 @@ C:\Users\user\Source\Repos\PruebaGit2\bin\Debug\net9.0-windows\runtimes\win-x64\
 C:\Users\user\Source\Repos\PruebaGit2\bin\Debug\net9.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\user\Source\Repos\PruebaGit2\bin\Debug\net9.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.csproj.AssemblyReference.cache
+C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FAgregarCuenta.resources
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Form1.resources
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.FormAddCl.resources
+C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FTranferencias.resources
+C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.MostrarTransacciones.resources
+C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Properties.Resources.resources
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.csproj.GenerateResource.cache
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.AssemblyInfoInputs.cache
@@ -111,7 +115,3 @@ C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\refint\Transaccio
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.pdb
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones en .net.genruntimeconfig.cache
 C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\ref\Transacciones en .net.dll
-C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FAgregarCuenta.resources
-C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.FTranferencias.resources
-C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Properties.Resources.resources
-C:\Users\user\Source\Repos\PruebaGit2\obj\Debug\net9.0-windows\Transacciones_en_.net.Forms.MostrarTransacciones.resources

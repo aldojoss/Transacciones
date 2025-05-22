@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using Transacciones_en_.net.Data;
 
 namespace Transacciones_en_.net.Forms
@@ -49,6 +50,12 @@ namespace Transacciones_en_.net.Forms
 
         private void btntransferir_Click(object sender, EventArgs e)
         {
+            decimal monto = 0;
+            if (!decimal.TryParse(textBox1.Text, out monto))
+            {
+                MessageBox.Show("Por favor,Ingrese un monto valido.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (Convert.ToDecimal(textBox1.Text) > 0)
             {
                 Monto = Convert.ToDecimal(textBox1.Text);

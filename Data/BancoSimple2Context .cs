@@ -19,6 +19,7 @@ namespace Transacciones_en_.net.Data
             optionsBuilder.UseSqlServer(@"Server=DESKTOP-B8PH5VV\SQLEXPRESS;Database=BancoSimple2;trusted_Connection=true;trustserverCertificate=true");
         }
 
+        //filtro global
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cuentas>().HasQueryFilter(e => e.Activa == true);

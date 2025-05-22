@@ -38,7 +38,7 @@ namespace Transacciones_en_.net.Forms
             }
             NuevaCuenta = new Cuentas
             {
-                NumeroCuenta = textBox1.Text,
+                NumeroCuenta = txtnumeroCuenta.Text,
                 Saldo = Convert.ToDecimal(txtsaldo.Text),
                 ClienteId = clienteId,
                 Activa = true
@@ -51,6 +51,20 @@ namespace Transacciones_en_.net.Forms
         {
             this.DialogResult = DialogResult.Cancel;
             Close();
+        }
+
+
+
+
+
+
+
+
+
+
+        private void txtsaldo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
