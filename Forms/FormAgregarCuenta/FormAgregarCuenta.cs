@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Transacciones_en_.net.Models;
+
+namespace Transacciones_en_.net.Forms
+{
+    public partial class FormAgregarCuenta : Form
+    {
+        public Cuentas NuevaCuenta;
+
+        private int clienteId;
+        public FormAgregarCuenta(int cliente)
+        {
+            InitializeComponent();
+            clienteId = cliente;
+        }
+
+        private void btnagregar_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

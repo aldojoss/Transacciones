@@ -1,19 +1,49 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Forms\FormAgregarCuenta.cs">
+    <Compile Update="Forms\Form1\Form1_Eventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\Form1.cs">
+    <Compile Update="Forms\Form1\Form1_Metodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormAgregarCliente.cs">
+    <Compile Update="Forms\FormAgregarCliente\FormAgregarCliente_Eventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\FormTranferencias.cs">
+    <Compile Update="Forms\FormAgregarCliente\FormAgregarCliente_Metodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\MostrarTransacciones.cs">
+    <Compile Update="Forms\FormAgregarCuenta\FormAgregarCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\Form1\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormAgregarCliente\FormAgregarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormAgregarCuenta\FormAgregarCuenta_Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormAgregarCuenta\FormAgregarCuenta_Metodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTransferencias\FormTranferencias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTransferencias\FormTransferencias_Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormTransferencias\FormTransferencias_Metodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MostrarTransacciones\MostrarTransacciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MostrarTransacciones\MostrarTransacciones_Eventos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MostrarTransacciones\MostrarTransacciones_Metodos.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
