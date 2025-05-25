@@ -21,10 +21,5 @@ namespace Transacciones_en_.net.Forms
             InitializeComponent();
             clienteId = cliente;
         }
-
-        private void btnagregar_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

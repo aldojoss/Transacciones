@@ -11,15 +11,12 @@
                 return;
             }
 
-
-
             // Crear nuevo cliente
             var nuevoCliente = new Transacciones_en_.net.Models.Clientes
             {
                 Nombre = TxtNombre.Text,
                 Identificacion = TxtIdentificacion.Text
             };
-
 
             // Guardar cliente en la base de datos
             using (var db = new Transacciones_en_.net.Data.BancoSimple2Context())
