@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Transacciones_en_.net
 {
-    public partial class FormAddCl : Form
+    public partial class FormAgregarCliente : Form
     {
-        public FormAddCl()
+        public FormAgregarCliente()
         {
             InitializeComponent();
         }

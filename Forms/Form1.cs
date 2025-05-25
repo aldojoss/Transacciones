@@ -17,7 +17,7 @@ namespace Transacciones_en_.net
 
         private void btnaggclientes_Click(object sender, EventArgs e)
         {
-            Form faggc = new FormAddCl();
+            Form faggc = new FormAgregarCliente();
             if (faggc.ShowDialog() == DialogResult.OK)
             {
                 dgvclientes.DataSource = db.Clientes.ToList();
@@ -40,7 +40,7 @@ namespace Transacciones_en_.net
             var cuentaorigen = (int)dgvcuentas.SelectedRows[0].Cells["CuentaId"].Value;
             var cuentadestino = (int)dgvcuentas.SelectedRows[1].Cells["CuentaId"].Value;
 
-            var form = new FTranferencias(cuentaorigen, cuentadestino);
+            var form = new FormTranferencias(cuentaorigen, cuentadestino);
             if (form.ShowDialog() == DialogResult.OK)
             {
                 RealizarTranferencia(cuentaorigen, cuentadestino, form.Monto);
@@ -119,7 +119,7 @@ namespace Transacciones_en_.net
 
             var clienteId = (int)dgvclientes.SelectedRows[0].Cells["ClienteId"].Value;
 
-            var form = new FAgregarCuenta(clienteId);
+            var form = new FormAgregarCuenta(clienteId);
 
             if (form.ShowDialog() == DialogResult.OK)
             {

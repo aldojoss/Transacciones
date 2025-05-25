@@ -1,6 +1,6 @@
 ﻿namespace Transacciones_en_.net
 {
-    partial class FormAddCl
+    partial class FormAgregarCliente
     {
         /// <summary>
         /// Required designer variable.

@@ -1,6 +1,6 @@
 ﻿namespace Transacciones_en_.net.Forms
 {
-    partial class FTranferencias
+    partial class FormTranferencias
     {
         /// <summary>
         /// Required designer variable.

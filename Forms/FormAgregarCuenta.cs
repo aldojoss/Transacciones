@@ -11,12 +11,12 @@ using Transacciones_en_.net.Models;
 
 namespace Transacciones_en_.net.Forms
 {
-    public partial class FAgregarCuenta : Form
+    public partial class FormAgregarCuenta : Form
     {
         public Cuentas NuevaCuenta;
 
         private int clienteId;
-        public FAgregarCuenta(int cliente)
+        public FormAgregarCuenta(int cliente)
         {
             InitializeComponent();
             clienteId = cliente;

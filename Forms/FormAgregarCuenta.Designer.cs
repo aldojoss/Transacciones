@@ -1,6 +1,6 @@
 ﻿namespace Transacciones_en_.net.Forms
 {
-    partial class FAgregarCuenta
+    partial class FormAgregarCuenta
     {
         /// <summary>
         /// Required designer variable.
