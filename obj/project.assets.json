@@ -2775,23 +2775,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\steve\\.nuget\\packages\\": {},
+    "C:\\Users\\Carlos_Mendez\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steve\\source\\repos\\TransaccionesBuenasPracticas\\Transacciones en .net.csproj",
+      "projectUniqueName": "C:\\Users\\Carlos_Mendez\\Downloads\\UNI\\Banco\\Transacciones\\Transacciones en .net.csproj",
       "projectName": "Transacciones en .net",
-      "projectPath": "C:\\Users\\steve\\source\\repos\\TransaccionesBuenasPracticas\\Transacciones en .net.csproj",
-      "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steve\\source\\repos\\TransaccionesBuenasPracticas\\obj\\",
+      "projectPath": "C:\\Users\\Carlos_Mendez\\Downloads\\UNI\\Banco\\Transacciones\\Transacciones en .net.csproj",
+      "packagesPath": "C:\\Users\\Carlos_Mendez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Carlos_Mendez\\Downloads\\UNI\\Banco\\Transacciones\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Carlos_Mendez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2800,7 +2800,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2855,7 +2854,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
